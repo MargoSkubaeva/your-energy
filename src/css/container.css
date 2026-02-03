@@ -17,3 +17,26 @@
     max-width: 1200px;
   }
 }
+.layout {
+  display: flex;
+  gap: 32px;
+}
+
+.sidebar {
+  width: 444px;
+  flex-shrink: 0;
+}
+
+.content {
+  flex: 1;
+}
+
+.sidebar {
+  width: 444px;
+  flex-shrink: 0;
+}
+
+.content {
+  flex: 1;
+}
+

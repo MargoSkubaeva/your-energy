@@ -1,0 +1,93 @@
+import { handleSubscription } from './js/services/subscriptions';
+import { mobileMenuRefs, refs } from './js/constants/refs';
+import { handleScrollForScrollTopBtn, scrollToTop } from './js/services/scroll';
+import { setActiveLink } from './js/utils/setActiveNavLink.js';
+
+import * as mobileMenu from './js/sharedComponents/mobile-menu.js';
+import './js/partials/rating-modal.js';
+import './js/services/modal.js';
+
+import { changeInteranlLinksBaseURL } from './js/config/internalLinksHandler.js';
+import { renderQuoteOfTheDay } from './js/sharedComponents/quoteOfTheDay.js';
+import { renderFavoritesItems } from './js/services/favorites.js';
+
+import { init as initFilters } from './js/partials/filters.js';
+
+function showPage(page) {
+  const homeView = document.querySelector('#home-view');
+  const favoritesView = document.querySelector('#favorites-view');
+
+  if (!homeView || !favoritesView) return;
+
+  if (page === 'home') {
+    homeView.hidden = false;
+    favoritesView.hidden = true;
+  }
+
+  if (page === 'favorites') {
+    homeView.hidden = true;
+    favoritesView.hidden = false;
+    renderFavoritesItems();
+  }
+
+  // (необов'язково) підсвітка активного лінка:
+  document.querySelectorAll('[data-page]').forEach(a => a.classList.remove('active'));
+  document.querySelector(`[data-page="${page}"]`)?.classList.add('active');
+}
+
+function main() {
+  changeInteranlLinksBaseURL();
+
+  // ✅ 1 раз при старті
+  document.addEventListener('DOMContentLoaded', () => {
+    renderQuoteOfTheDay();
+    setActiveLink();        // якщо треба (або можеш прибрати)
+    showPage('home');       // стартова сторінка
+  });
+
+  // ✅ перемикання Home/Favorites
+  document.addEventListener('click', e => {
+    const link = e.target.closest('[data-page]');
+    if (!link) return;
+
+    e.preventDefault();
+    showPage(link.dataset.page);
+
+    // якщо це мобільне меню — можна закрити
+    mobileMenu.handleNavLinkClick?.();
+  });
+
+  // Subscribe
+  const subscribeForm = document.querySelector('#subscribe-form');
+  if (subscribeForm) {
+    subscribeForm.addEventListener('submit', async event => {
+      event.preventDefault();
+      try {
+        const email = subscribeForm.email.value;
+        await handleSubscription(email);
+        subscribeForm.reset();
+      } catch (error) {
+        console.log(error);
+      }
+    });
+  }
+
+  // Mobile menu
+  mobileMenuRefs.burgerButton.addEventListener('click', mobileMenu.openMobileMenu);
+  mobileMenuRefs.closeButton.addEventListener('click', mobileMenu.closeMenu);
+  mobileMenuRefs.backdrop.addEventListener('click', mobileMenu.handleBackdropClick);
+  document.addEventListener('keydown', mobileMenu.handleEscapeKey);
+  mobileMenuRefs.navLinks.forEach(link =>
+    link.addEventListener('click', mobileMenu.handleNavLinkClick)
+  );
+
+  // Scroll to top
+  window.addEventListener('scroll', handleScrollForScrollTopBtn);
+  refs.scrollToTopBtn.addEventListener('click', scrollToTop);
+}
+
+
+main();
+
+
+

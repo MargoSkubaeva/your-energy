@@ -1,19 +1,19 @@
-<header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
+<header class="header-section">
+	<div class="container header-container">
+		<a href="/" class="logo">YOUR ENERGY</a>
+
+		<button type="button" class="burger-btn js-burger-button" id="burger">
+			<svg width="32" height="32">
+				<use href="/img/sprite.svg#burger"></use>
+			</svg>
+		</button>
+
+		<nav class="header-desktop-nav">
+			<load src="/partials/sharedComponents/navigation.html" place="header" />
+
+			<load src="/partials/sharedComponents/socials.html" place="header" />
+		</nav>
+	</div>
 </header>
+
+
