@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="/vanilla-app-template/favicon.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:wght@100..900&display=swap"
+			rel="stylesheet"
+		/>
+		<title>YourEnergy | Home</title>
+		<script type="module" crossorigin src="/vanilla-app-template/index.js"></script>
+		<link rel="modulepreload" crossorigin href="/vanilla-app-template/assets/vendor-DWeE5lQs.js">
+		<link rel="stylesheet" crossorigin href="/vanilla-app-template/assets/vendor-DnveWo0P.css">
+		<link rel="stylesheet" crossorigin href="/vanilla-app-template/assets/styles-Bw8JzBIK.css">
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="header-section">
+	<div class="container header-container">
+		<a href="/" class="logo">YOUR ENERGY</a>
+
+		<button type="button" class="burger-btn js-burger-button" id="burger">
+			<svg width="32" height="32">
+				<use href="/vanilla-app-template/img/sprite.svg#burger"></use>
+			</svg>
+		</button>
+
+		<nav class="header-desktop-nav">
+			<ul class="nav-links header">
+ <li class="nav-item">
+  <a class="nav-link" href="#" data-page="home">Home</a>
+ </li>
+
+ <li class="nav-item">
+  <a class="nav-link" href="#" data-page="favorites">Favorites</a>
+ </li>
+</ul>
+
+
+			<ul class="socials-list header">
+  <li class="socials-item">
+    <a
+      class="socials-link"
+      href="https://www.facebook.com/goITclub"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Go to GoIT Facebook page"
+    >
+      <svg
+        class="socials-icon"
+        aria-hidden="true"
+        focusable="false"
+        width="28"
+        height="28"
+      >
+        <use href="/vanilla-app-template/img/sprite.svg#icon-facebook"></use>
+      </svg>
+    </a>
+  </li>
+
+  <li class="socials-item">
+    <a
+      class="socials-link"
+      href="https://www.instagram.com/goitclub"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Go to GoIT Instagram page"
+    >
+      <svg
+        class="socials-icon"
+        aria-hidden="true"
+        focusable="false"
+        width="28"
+        height="28"
+      >
+        <use href="/vanilla-app-template/img/sprite.svg#icon-instagram"></use>
+      </svg>
+    </a>
+  </li>
+
+  <li class="socials-item">
+    <a
+      class="socials-link"
+      href="https://www.youtube.com/c/GoIT"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Go to GoIT YouTube channel"
+    >
+      <svg
+        class="socials-icon"
+        aria-hidden="true"
+        focusable="false"
+        width="28"
+        height="28"
+      >
+        <use href="/vanilla-app-template/img/sprite.svg#icon-youtube"></use>
+      </svg>
+    </a>
+  </li>
+</ul>
+		</nav>
+	</div>
+</header>
+
+
+
+
+			<main class="main">
+
+  <!-- HOME -->
+  <section id="home-view">
+    <section class="hero">
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1>
+          <span class="icon">
+            <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M26.7271 25.3227L27.4083 26.021L19.0348 2.02583L28.6289 24.502L29.0121 25.3997L29.0451 24.4247L29.872 0L30.6989 24.4242L30.732 25.3997L31.115 24.5024L40.7093 2.02583L32.6573 25.0994L32.3357 26.021L33.017 25.3227L50.0829 7.82973L34.2395 26.4365L33.6067 27.1797L56.7269 16.6278L35.2319 28.2549L34.3734 28.7193L35.3473 28.6622L59.744 27.2319L34.5321 30.4318L58.7268 38.2099L35.0087 32.3213L34.0614 32.0861L34.8196 32.7L53.8125 48.079L33.8233 34.0201L33.0249 33.4586L33.5101 34.3049L45.665 55.5065L32.1043 35.176L31.5626 34.364L35.3845 59.4892L29.872 34.68L24.3595 59.4892L28.0346 35.329L28.1814 34.364L27.6401 35.1756L14.0791 55.5065L26.2337 34.3054L26.7191 33.4586L25.9212 34.0198L5.93151 48.079L24.9241 32.7003L25.6827 32.0861L24.7358 32.3211L1.01726 38.2099L24.2827 30.7305L25.212 30.4318L0 27.2319L25.3707 28.7193L24.5126 28.2551L3.01713 16.6278L26.1373 27.1797L9.66116 7.82973L26.7271 25.3227ZM28.471 26.3835L27.2592 27.1338L26.4002 28.2712L26.0102 29.6421L26.1417 31.0614L26.777 32.3373L27.8303 33.2975L29.1594 33.8124H30.5847L31.9137 33.2975L32.9671 32.3373L33.6024 31.0614L33.7339 29.6421L33.3438 28.2712L32.4849 27.1338L31.2731 26.3835L29.872 26.1216L28.471 26.3835Z" fill="#242424"/>
+            </svg>
+          </span>Get <em>Body</em> in shape, Stay healthy</h1>
+        <p>Transform your physique and embrace a healthier lifestyle with our comprehensive fitness and nutrition support.</p>
+      </div>
+      <div class="hero-image">
+        <img
+          class="desctop-img"
+          src="/vanilla-app-template/assets/hero-image-8yFCwGo8.png"
+          srcset="/vanilla-app-template/assets/hero-image-8yFCwGo8.png 1x, /vanilla-app-template/assets/hero-image@2x-QHBGwdXI.png 2x"
+          alt="Fitness high five"
+        >
+        <img
+          class="mobile-img"
+          src="/vanilla-app-template/assets/hero-mobile-DwV6D4yO.png"
+          srcset="/vanilla-app-template/assets/hero-mobile-DwV6D4yO.png 1x, /vanilla-app-template/assets/hero-mobile@2x-BCR-peof.png 2x"
+          alt="Fitness high five"
+        >
+      </div>
+      <div class="hero-tag-container">
+        <div class="hero-tag-image">
+          <img
+            src="/vanilla-app-template/assets/hero-tag-image-PcBZs8V3.png"
+            srcset="/vanilla-app-template/assets/hero-tag-image-PcBZs8V3.png 1x, /vanilla-app-template/assets/hero-tag-image-PcBZs8V3.png 2x"
+            alt="Fitness high five"
+          >
+        </div>
+        <div class="hero-tags">
+          <span>#Sport</span>
+          <span>#Healthy</span>
+          <span>#Workout</span>
+          <span>#Diet</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    <section class="home-section">
+	<div class="container home-main-container">
+		<div class="home-header">
+			<div class="title-wrapper">
+				<h2 class="home-title">Exercises</h2>
+				<p class="current-category-name"></p>
+			</div>
+
+			<div class="filters-wrapper">
+				<form class="search">
+					<input
+						type="text"
+						id="search-input"
+						placeholder="Search..."
+						class="search-input"
+						name="search"
+					>
+					<button class="input-btn" type="submit">
+						<svg class="search-icon" width="18" height="18">
+							<use href="./img/sprite.svg#search"></use>
+						</svg>
+					</button>
+				</form>
+
+				<div class="filters">
+					<button class="filter-btn active" data-type="Muscles">
+						Muscles
+					</button>
+					<button class="filter-btn" data-type="Body parts">
+						Body parts
+					</button>
+					<button class="filter-btn" data-type="Equipment">
+						Equipment
+					</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="main-content">
+			<div class="cards-wrapper">
+				<ul class="cards-container" id="exercise-cards-container"></ul>
+				<ul class="cards-container" id="exercise-cards-container">
+  <li class="exercise-card">
+    <img class="exercise-card__img" src="/vanilla-app-template/img/exercises/abductors.jpg" alt="Abductors">
+    <span class="exercise-card__label">Abductors</span>
+  </li>
+
+  <li class="exercise-card">
+    <img class="exercise-card__img" src="/vanilla-app-template/img/exercises/adductors.jpg" alt="Adductors">
+    <span class="exercise-card__label">Adductors</span>
+  </li>
+
+  <li class="exercise-card">
+    <img class="exercise-card__img" src="/vanilla-app-template/img/exercises/biceps.jpg" alt="Biceps">
+    <span class="exercise-card__label">Biceps</span>
+  </li>
+
+  <li class="exercise-card">
+    <img class="exercise-card__img" src="/vanilla-app-template/img/exercises/calves.jpg" alt="Calves">
+    <span class="exercise-card__label">Calves</span>
+  </li>
+
+  <li class="exercise-card">
+    <img class="exercise-card__img" src="/vanilla-app-template/img/exercises/cardio.jpg" alt="Cardio">
+    <span class="exercise-card__label">Cardio</span>
+  </li>
+
+  <li class="exercise-card">
+    <img class="exercise-card__img" src="/vanilla-app-template/img/exercises/delts.jpg" alt="Delts">
+    <span class="exercise-card__label">Delts</span>
+  </li>
+
+  <li class="exercise-card">
+    <img class="exercise-card__img" src="/vanilla-app-template/img/exercises/forearms.jpg" alt="Forearms">
+    <span class="exercise-card__label">Forearms</span>
+  </li>
+
+  <li class="exercise-card">
+    <img class="exercise-card__img" src="/vanilla-app-template/img/exercises/glutes.jpg" alt="Glutes">
+    <span class="exercise-card__label">Glutes</span>
+  </li>
+
+  <li class="exercise-card">
+    <img class="exercise-card__img" src="/vanilla-app-template/img/exercises/hamstrings.jpg" alt="Hamstrings">
+    <span class="exercise-card__label">Hamstrings</span>
+  </li>
+
+  <li class="exercise-card">
+    <img class="exercise-card__img" src="/vanilla-app-template/img/exercises/lats.jpg" alt="Lats">
+    <span class="exercise-card__label">Lats</span>
+  </li>
+
+  <li class="exercise-card">
+    <img class="exercise-card__img" src="/vanilla-app-template/img/exercises/levatorS.jpg" alt="Levator Scapulae">
+    <span class="exercise-card__label">Levator Scapulae</span>
+  </li>
+
+  <li class="exercise-card">
+    <img class="exercise-card__img" src="/vanilla-app-template/img/exercises/abc.jpg" alt="Other">
+    <span class="exercise-card__label">Other</span>
+  </li>
+</ul>
+
+				<div id="pagination" class="pagination"></div>
+			</div>
+
+			<div class="encourage-section">
+				<div class="quote-wrapper">
+					 <div class="quote-day-card">
+ <span class="quote-icon-running">
+  <img
+   src="/vanilla-app-template/img/runner.svg"
+   width="34"
+   height="32"
+   alt="Running Icon"
+  >
+ </span>
+
+ <div class="quote-day-card-content">
+  <h2 class="quote-day-card-title">Quote of the day</h2>
+  <p class="quote-day-card-text"></p>
+  <p class="quote-day-card-author"></p>
+ </div>
+
+ <span class="quote-icon-mark">
+  <img
+   src="/vanilla-app-template/img/time-gantel-icon.svg"
+   width="20"
+   height="20"
+   alt="Quotation Mark"
+  >
+ </span>
+ <span class="quote-icon-mark">
+  <svg width="18" height="15" style="fill: #f4f4f4 !important;">
+    <use href="/vanilla-app-template/img/sprite.svg#icon-commas"></use>
+  </svg>
+ </span>
+
+</div>
+
+					<div class="encourage-img-container">
+						<img
+							class="encourage-img"
+							src="/vanilla-app-template/assets/quote_1x-CQy9jPpB.png"
+							srcset="/vanilla-app-template/assets/quote_1x-CQy9jPpB.png 1x, /vanilla-app-template/assets/quote_2x-_Rd8mckk.png 2x"
+							alt="Women sportswear taking break from workout"
+						>
+					</div>
+				</div>
+
+				<div class="time-min-card time-card-home">
+					<span class="time-home-icon-gantel">
+						<img
+							src="/vanilla-app-template/img/time-home-gantel-icon.svg"
+							alt="Gantel"
+						>
+					</span>
+					<p class="time-min-card-title time-min-card-home-title">
+						110 min
+					</p>
+					<p class="time-min-card-text time-min-card-home-text">
+						Daily norm of sports
+					</p>
+					<p class="time-min-card-main-text">
+						The World Health Organization recommends at least 150
+						minutes of moderate-intensity aerobic physical activity
+						throughout the week for adults aged 18-64. However, what
+						happens if we adjust that number to 110 minutes every
+						day? While it might seem like a high number to hit,
+						dedicating 110 minutes daily to sporting activities may
+						offer unparalleled benefits to physical health, mental
+						well-being, and overall quality of life.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+  </section>
+
+  <!-- FAVORITES -->
+  <section id="favorites-view" hidden>
+    <div class="favorites-wrapper">
+	<div class="container favorites-section-wrapper">
+		<h1 class="favorites-section-title">Favorites</h1>
+		<div class="desktop-favorites-section">
+			<div class="left-section-part">
+				 <div class="quote-day-card">
+ <span class="quote-icon-running">
+  <img
+   src="/vanilla-app-template/img/runner.svg"
+   width="34"
+   height="32"
+   alt="Running Icon"
+  >
+ </span>
+
+ <div class="quote-day-card-content">
+  <h2 class="quote-day-card-title">Quote of the day</h2>
+  <p class="quote-day-card-text"></p>
+  <p class="quote-day-card-author"></p>
+ </div>
+
+ <span class="quote-icon-mark">
+  <img
+   src="/vanilla-app-template/img/time-gantel-icon.svg"
+   width="20"
+   height="20"
+   alt="Quotation Mark"
+  >
+ </span>
+ <span class="quote-icon-mark">
+  <svg width="18" height="15" style="fill: #f4f4f4 !important;">
+    <use href="/vanilla-app-template/img/sprite.svg#icon-commas"></use>
+  </svg>
+ </span>
+
+</div>
+				<div class="time-card-wrapper">
+	<div class="time-min-card">
+		<span class="time-icon-gantel">
+  <svg width="20" height="20" style="fill: #242424;">
+    <use href="/vanilla-app-template/img/sprite.svg#icon-gantel"></use>
+  </svg>
+</span>
+		<p class="time-min-card-title">110 min</p>
+		<p class="time-min-card-text">Daily norm of sports</p>
+	</div>
+	<div class="time-min-image">
+		<picture>
+			<source
+				media="(min-width: 1440px)"
+				srcset="/vanilla-app-template/assets/desktop_1x-De1vi8Ps.png 1x, /vanilla-app-template/assets/desktop_2x-CqGwdETs.png 2x"
+			>
+			<source
+				media="(min-width: 768px)"
+				srcset="/vanilla-app-template/assets/tablet_1x-DMFvAD2C.png 1x, /vanilla-app-template/assets/tablet_2x-BZ1hsnXL.png 2x"
+			>
+			<source
+				media="(max-width: 767px)"
+				srcset="/vanilla-app-template/assets/mobile_1x-CgXgC1U9.png 1x, /vanilla-app-template/assets/mobile_2x--0wbnGVT.png 2x"
+			>
+			<img src="/vanilla-app-template/assets/desktop_1x-De1vi8Ps.png" alt="Girls talking">
+		</picture>
+	</div>
+</div>
+			</div>
+			<div class="right-section-part">
+				<div class="workout-list-wrapper">
+					<p class="not-items-message" hidden>
+						It appears that you haven't added any exercises to your
+						favorites yet. To get started, you can add exercises
+						that you like to your favorites for easier access in the
+						future.
+					</p>
+					<ul class="workout-list" id="exercise-cards-container"></ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+  </section>
+
+</main>
+
+
+			<footer class="footer">
+	<div class="container footer-container">
+		<div class="row">
+			<div class="col-1">
+				<div>
+					<a class="logo" href="#">
+						<svg width="132" height="24">
+							<use href="./img/sprite.svg#your-energy"></use>
+						</svg>
+					</a>
+				</div>
+				<ul class="socials-list socials">
+  <li class="socials-item">
+    <a
+      class="socials-link"
+      href="https://www.facebook.com/goITclub"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Go to GoIT Facebook page"
+    >
+      <svg
+        class="socials-icon"
+        aria-hidden="true"
+        focusable="false"
+        width="28"
+        height="28"
+      >
+        <use href="/vanilla-app-template/img/sprite.svg#icon-facebook"></use>
+      </svg>
+    </a>
+  </li>
+
+  <li class="socials-item">
+    <a
+      class="socials-link"
+      href="https://www.instagram.com/goitclub"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Go to GoIT Instagram page"
+    >
+      <svg
+        class="socials-icon"
+        aria-hidden="true"
+        focusable="false"
+        width="28"
+        height="28"
+      >
+        <use href="/vanilla-app-template/img/sprite.svg#icon-instagram"></use>
+      </svg>
+    </a>
+  </li>
+
+  <li class="socials-item">
+    <a
+      class="socials-link"
+      href="https://www.youtube.com/c/GoIT"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Go to GoIT YouTube channel"
+    >
+      <svg
+        class="socials-icon"
+        aria-hidden="true"
+        focusable="false"
+        width="28"
+        height="28"
+      >
+        <use href="/vanilla-app-template/img/sprite.svg#icon-youtube"></use>
+      </svg>
+    </a>
+  </li>
+</ul>
+			</div>
+			<div class="col-2">
+				<h3 class="heading">
+					Transforming your <i>body</i> shape with us
+				</h3>
+			</div>
+			<div class="col-3">
+				<form id="subscribe-form">
+					<p>Subscribe and learn about new exercises!</p>
+					<div class="input">
+						<input
+							type="text"
+							name="email"
+							required
+							pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+							placeholder="Email"
+						>
+					</div>
+					<div class="input">
+						<input type="submit" value="Send">
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="footer-ending row">
+			<div class="col-1">
+				<p>YourEnergy. All rights reserved.</p>
+			</div>
+			<div class="col-2">
+				<p class="policy-links">
+					<a href="#">Privacy Policy</a> /
+					<a href="#">Terms of Service</a>
+				</p>
+			</div>
+			<div class="col-3">
+				<p class="year">©2023</p>
+			</div>
+		</div>
+	</div>
+</footer>
+
+			<button
+  class="scroll-to-top-btn invisible js-scroll-to-top-btn"
+  aria-label="Scroll to top"
+>
+  <svg class="scroll-to-top-img" width="24" height="24">
+    <use href="/vanilla-app-template/img/sprite.svg#arrow-to-top-right"></use>
+  </svg>
+</button>
+			<div id="exerciseModal" class="modal hidden">
+	<div class="modal-content" id="exerciseModalContent">
+		<span class="close-button" id="closeModalBtn">
+			<svg>
+				<use href="./img/sprite.svg#close"></use>
+			</svg>
+		</span>
+		<div class="modal-data">
+			<div class="img-container">
+				<img
+					id="modalImage"
+					src="https://ftp.goit.study/img/power-pulse/gifs/0003.gif"
+					alt=""
+				>
+			</div>
+			<div class="text-container">
+				<div>
+					<h2 id="modalTitle">Air bake</h2>
+					<div class="rating-container">
+						<span id="modalRating">4.0</span>
+						<div class="stars">
+							<svg class="star">
+								<use href="./img/sprite.svg#star"></use>
+							</svg>
+							<svg class="star">
+								<use href="./img/sprite.svg#star"></use>
+							</svg>
+							<svg class="star">
+								<use href="./img/sprite.svg#star"></use>
+							</svg>
+							<svg class="star">
+								<use href="./img/sprite.svg#star"></use>
+							</svg>
+							<svg class="star">
+								<use href="./img/sprite.svg#star"></use>
+							</svg>
+						</div>
+					</div>
+				</div>
+				<ul class="info-container">
+					<li class="info">
+						<h3>Target</h3>
+						<p id="modalTarget">Cardiovascular system</p>
+					</li>
+					<li class="info">
+						<h3>Body Part</h3>
+						<p id="modalBodyPart">Cardio</p>
+					</li>
+					<li class="info">
+						<h3>Equipment</h3>
+						<p id="modalEquipment">Leverage machine</p>
+					</li>
+					<li class="info">
+						<h3>Popular</h3>
+						<p id="modalPopular">0</p>
+					</li>
+					<li class="info">
+						<h3>Burned calories</h3>
+						<p id="modalCalories">116/3 min</p>
+					</li>
+				</ul>
+				<p id="modalDescription" class="description">
+					While not a muscle, this system is essential for endurance training.
+					Aerobic exercises like running, cycling, and swimming improve
+					cardiovascular health.
+				</p>
+			</div>
+		</div>
+		<div class="btn-container">
+			<button id="favoriteButton" class="modal-btn add-fav-btn" aria-label="Add to favorites">
+				Add to favorites
+				<svg>
+					<use href="./img/sprite.svg#heart"></use>
+				</svg>
+			</button>
+			<button id="ratingButton" class="modal-btn add-rate-btn" aria-label="Rate this exercise">
+				Give a rating
+			</button>
+		</div>
+	</div>
+</div>
+			<div class="modal hidden" id="ratingModal">
+	<div class="rating-modal" data-modal="rating">
+		<button class="close-rating" data-modal-close aria-label="Close">
+			<svg>
+				<use href="./img/sprite.svg#close"></use>
+			</svg>
+		</button>
+
+		<h3>Rating</h3>
+
+		<form id="rating-form">
+			<div class="rating-group">
+				<div class="rating-value">0.0</div>
+				<div class="rating-stars">
+					<input type="radio" id="star-5" name="rating" value="5">
+					<label for="star-5"
+						><svg class="star-icon">
+							<use href="/vanilla-app-template/img/sprite.svg#star"></use></svg
+					></label>
+
+					<input type="radio" id="star-4" name="rating" value="4">
+					<label for="star-4"
+						><svg class="star-icon">
+							<use href="/vanilla-app-template/img/sprite.svg#star"></use></svg
+					></label>
+
+					<input type="radio" id="star-3" name="rating" value="3">
+					<label for="star-3"
+						><svg class="star-icon">
+							<use href="/vanilla-app-template/img/sprite.svg#star"></use></svg
+					></label>
+
+					<input type="radio" id="star-2" name="rating" value="2">
+					<label for="star-2"
+						><svg class="star-icon">
+							<use href="/vanilla-app-template/img/sprite.svg#star"></use></svg
+					></label>
+
+					<input type="radio" id="star-1" name="rating" value="1">
+					<label for="star-1"
+						><svg class="star-icon">
+							<use href="/vanilla-app-template/img/sprite.svg#star"></use></svg
+					></label>
+				</div>
+			</div>
+			<input
+				type="email"
+				name="email"
+				placeholder="Email"
+				required
+				pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+			>
+
+			<textarea
+				name="comment"
+				placeholder="Your comment"
+				required
+			></textarea>
+
+			<button data-modal-rating-send type="submit">Send</button>
+		</form>
+	</div>
+</div>
+		</div>
+
+		<div class="mobile-backdrop mobile-backdrop-js">
+  <div class="mobile-menu-panel mobile-menu-js">
+    <button class="mobile-menu-close-btn mobile-menu-close-js" type="button">
+      <svg class="mobile-menu-close-icon" width="32" height="32">
+        <use href="/vanilla-app-template/img/sprite.svg#x"></use>
+      </svg>
+    </button>
+
+    <nav class="mobile-menu-nav">
+      <ul class="nav-links mobile-menu">
+ <li class="nav-item">
+  <a class="nav-link" href="#" data-page="home">Home</a>
+ </li>
+
+ <li class="nav-item">
+  <a class="nav-link" href="#" data-page="favorites">Favorites</a>
+ </li>
+</ul>
+
+
+      <ul class="socials-list mobile-menu">
+  <li class="socials-item">
+    <a
+      class="socials-link"
+      href="https://www.facebook.com/goITclub"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Go to GoIT Facebook page"
+    >
+      <svg
+        class="socials-icon"
+        aria-hidden="true"
+        focusable="false"
+        width="28"
+        height="28"
+      >
+        <use href="/vanilla-app-template/img/sprite.svg#icon-facebook"></use>
+      </svg>
+    </a>
+  </li>
+
+  <li class="socials-item">
+    <a
+      class="socials-link"
+      href="https://www.instagram.com/goitclub"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Go to GoIT Instagram page"
+    >
+      <svg
+        class="socials-icon"
+        aria-hidden="true"
+        focusable="false"
+        width="28"
+        height="28"
+      >
+        <use href="/vanilla-app-template/img/sprite.svg#icon-instagram"></use>
+      </svg>
+    </a>
+  </li>
+
+  <li class="socials-item">
+    <a
+      class="socials-link"
+      href="https://www.youtube.com/c/GoIT"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Go to GoIT YouTube channel"
+    >
+      <svg
+        class="socials-icon"
+        aria-hidden="true"
+        focusable="false"
+        width="28"
+        height="28"
+      >
+        <use href="/vanilla-app-template/img/sprite.svg#icon-youtube"></use>
+      </svg>
+    </a>
+  </li>
+</ul>
+    </nav>
+  </div>
+</div>
+
+	</body>
+</html>
+
+
