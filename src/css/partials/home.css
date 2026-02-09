@@ -207,7 +207,7 @@
 		flex-direction: row-reverse;
 		justify-content: start;
 		align-items: flex-start;
-		gap: 16px;
+		gap: 32px;
 	}
 }
 
@@ -217,7 +217,7 @@
 	gap: 20px;
 
 	@media (min-width: 768px) {
-		gap: 32px;
+		gap: 0px;
 	}
 }
 
@@ -380,15 +380,9 @@
   font-weight: 500;
 }
 
-@media only screen and (min-width: 1440px) {
-  .main-content {
-    display: flex !important;
-    flex-direction: row-reverse !important;
-    align-items: flex-start !important;
-    justify-content: flex-start !important;
-    gap: 16px !important;
-  }
 
+@media only screen and (min-width: 1440px) {
+  
   /* ліва колонка як у Figma */
   .encourage-section {
     width: 444px !important;

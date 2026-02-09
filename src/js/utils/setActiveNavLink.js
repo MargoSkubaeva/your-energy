@@ -1,5 +1,6 @@
 export const getPathnameFromHref = link => {
 	const href = link.getAttribute('href');
+	if (!href || href === '#') return '';
 	const url = new URL(href);
 	const path = url.pathname;
 	return path;
