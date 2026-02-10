@@ -67,6 +67,33 @@ export const bindCategoryClickHandlers = () => {
   });
 };
 
+const filterButtonsContainer = document.querySelector('.filters');
+
+if (filterButtonsContainer) {
+  filterButtonsContainer.addEventListener('click', async event => {
+    // Шукаємо найближчу кнопку, якщо клікнули по тексту всередині
+    const target = event.target.closest('button');
+
+    if (!target || target.classList.contains('active')) {
+      return;
+    }
+
+    const filter = target.dataset.type;
+    console.log('Вибрано фільтр:', filter); // Це допоможе нам побачити роботу в консолі
+
+    // Перемикаємо активний клас (використовуємо .filter-btn як у твоїй консолі)
+    document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+    target.classList.add('active');
+
+    // Очищуємо заголовки сторінки
+    mainHomeRefs.sectionTitle.textContent = 'Exercises';
+    mainHomeRefs.sectionSubTitle.textContent = '';
+
+    // Завантажуємо категорії
+    loadCategories({ filter, page: 1, limit: exerciseLimit });
+  });
+}
+
 export const createCategoryCard = category => {
   return `
     <li
