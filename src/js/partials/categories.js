@@ -151,3 +151,5 @@ export const toggleSearchInput = visible => {
     form.addEventListener('submit', handleSearchInput);
   }
 };
+
+loadCategories({ filter: 'Muscles', page: 1, limit: exerciseLimit });

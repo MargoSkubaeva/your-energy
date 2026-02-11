@@ -30,7 +30,7 @@ function showPage(page) {
     renderFavoritesItems();
   }
 
-  // (необов'язково) підсвітка активного лінка:
+  
   document.querySelectorAll('[data-page]').forEach(a => a.classList.remove('active'));
   document.querySelector(`[data-page="${page}"]`)?.classList.add('active');
 }
@@ -38,14 +38,14 @@ function showPage(page) {
 function main() {
   changeInteranlLinksBaseURL();
 
-  // ✅ 1 раз при старті
+  
   document.addEventListener('DOMContentLoaded', () => {
     renderQuoteOfTheDay();
-    setActiveLink();        // якщо треба (або можеш прибрати)
-    showPage('home');       // стартова сторінка
+    setActiveLink();        
+    showPage('home');       
   });
 
-  // ✅ перемикання Home/Favorites
+  
   document.addEventListener('click', e => {
     const link = e.target.closest('[data-page]');
     if (!link) return;

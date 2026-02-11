@@ -27,7 +27,7 @@ export function preparingCardsMarkup(listElement, items, BtnVisible = true) {
         <div class="workout-body">
           <span class="workout-icon-running">
             <img
-              src="/img/quote_icon_1.svg"
+              src="./img/runner.svg"
               width="24"
               height="24"
               alt="Running Icon"

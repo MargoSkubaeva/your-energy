@@ -383,13 +383,11 @@
 
 @media only screen and (min-width: 1440px) {
   
-  /* ліва колонка як у Figma */
   .encourage-section {
     width: 444px !important;
     flex: 0 0 444px !important;
   }
 
-  /* права колонка під грід */
   .cards-wrapper {
     flex: 0 0 900px !important;
     width: 900px !important;
@@ -408,7 +406,15 @@
     padding: 0 !important;
     list-style: none !important;
   }
+
+   .cards-container:has([class*="workout"]) {
+  grid-template-columns: repeat(2, 442px) !important;
+  gap: 32px 16px !important;
+  width: 900px !important;
+  display: grid !important;
+  }
 }
+
 
 
 
